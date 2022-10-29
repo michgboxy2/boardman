@@ -3,4 +3,4 @@ An application that holds people's wager and disburses the winnings to the user 
 
 url: middleman.fun
 
-my read me file
+test

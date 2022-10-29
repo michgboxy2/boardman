@@ -1,0 +1,24 @@
+{
+  "name": "boardman",
+  "version": "1.0.0",
+  "description": "An application that holds people's wager and disburses the winnings to the user after event is verified.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michgboxy2/boardman.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/michgboxy2/boardman/issues"
+  },
+  "homepage": "https://github.com/michgboxy2/boardman#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
