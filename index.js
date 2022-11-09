@@ -15,7 +15,7 @@ app.get('/', async (req, res) => {
 
     try {
 
-        res.send('hey king');
+        res.send('hey king michy');
 
     } catch (error) {
         console.log(error);
