@@ -10,6 +10,11 @@ job('node_project2') {
         nodejs('nodejs')
     }
     steps {
-        shell('npm install')
+        remoteShell('ubuntu@3.84.221.74:22') {
+            command('git clone https://github.com/michgboxy2/boardman.git')
+            command('cd boardman')
+            command('sudo npm install')
+            command('sudo pm2 start index.js')
+        }
     }
 }
