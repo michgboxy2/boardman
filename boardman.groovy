@@ -10,6 +10,6 @@ job('node_project2') {
         nodejs('nodejs')
     }
     steps {
-        shell('git pull origin main', 'cd boardman', 'npm install')
+        shell('npm install')
     }
 }
