@@ -16,9 +16,15 @@ pipeline {
                timeout(time:5, unit:'DAYS'){
                    input message: 'Approve PRODUCTION DEPLOYMENT?'
                }
+
+               build job: 'node_project2'
+            }
+            post {
+                success {
+                    echo "Deployment completed"
+                }
             }
 
-            build job: 'node_project2'
         }
     }
 }
