@@ -13,8 +13,12 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-               build job: 'node_project2'
+               timeout(time:5, unit:'DAYS'){
+                   input message: 'Approve PRODUCTION DEPLOYMENT?'
+               }
             }
+
+            build job: 'node_project2'
         }
     }
 }
