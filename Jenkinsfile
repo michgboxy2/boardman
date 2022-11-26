@@ -11,6 +11,11 @@ pipeline {
                 echo 'Building Nodejs app'
             }
         }
+        // Stage('Create Tomcat Docker Image'){
+        //     steps {
+        //         sh "docker build . -t tomcatsamplewebapp:${env.BUILD_ID}"
+        //     }
+        // }
         stage('Deploy') {
             steps {
                timeout(time:5, unit:'DAYS'){
