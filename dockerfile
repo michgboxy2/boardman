@@ -7,4 +7,7 @@ LABEL maintainer="michgboxy@gmail.com"
 WORKDIR /usr/share/nginx/html
 
 # Replace the index.html with custom file
-COPY index.html index.html
+# COPY index.html index.html
+EXPOSE 80
+
+CMD ["nginx", "-g", "daemon off;"]
